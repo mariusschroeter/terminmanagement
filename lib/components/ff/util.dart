@@ -32,6 +32,10 @@ String dateTimeFormat(String format, DateTime? dateTime, {String? locale}) {
   return DateFormat(format).format(dateTime);
 }
 
+String getdurationStr(int dur) {
+  return ((dur / 60).floor() / 60).toStringAsFixed(1) + " Stunde/n";
+}
+
 Future launchURL(String url) async {
   var uri = Uri.parse(url).toString();
   try {

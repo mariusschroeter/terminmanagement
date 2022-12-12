@@ -22,8 +22,10 @@ class _TerminDetailPageWidgetState extends State<TerminDetailPageWidget> {
 
   @override
   Widget build(BuildContext context) {
+    final duration = getdurationStr(widget.termin!.duration!);
     return Scaffold(
       key: scaffoldKey,
+      resizeToAvoidBottomInset: false,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
       appBar: AppBar(
         backgroundColor: FlutterFlowTheme.of(context).primaryColor,
@@ -75,7 +77,7 @@ class _TerminDetailPageWidgetState extends State<TerminDetailPageWidget> {
                         style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       Text(
-                        widget.termin!.duration!.toString(),
+                        duration,
                         style: FlutterFlowTheme.of(context).bodyText1,
                       ),
                       Text(

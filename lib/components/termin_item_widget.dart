@@ -16,10 +16,6 @@ class TerminItemWidget extends StatefulWidget {
 }
 
 class _TerminItemWidgetState extends State<TerminItemWidget> {
-  String getdurationStr(int dur) {
-    return ((dur / 60).floor() / 60).toStringAsFixed(1) + " Stunde/n";
-  }
-
   @override
   Widget build(BuildContext context) {
     final duration = getdurationStr(widget.termin!.duration!);
