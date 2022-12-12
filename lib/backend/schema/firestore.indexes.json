@@ -1,0 +1,18 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "termine",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "isDone",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ]
+}
